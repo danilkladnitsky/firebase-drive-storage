@@ -5,7 +5,6 @@ import FileItem from "./FileItem";
 import "../../styles/FilesView.css";
 import FileCard from "./FileCard";
 
-import Slider from "react-slick";
 const FilesView = () => {
   const [files, setFiles] = useState([]);
 

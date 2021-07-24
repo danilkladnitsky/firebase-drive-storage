@@ -1,6 +1,4 @@
 import React from "react";
-import Search from "@material-ui/icons/Search";
-import ExpandMore from "@material-ui/icons/ExpandMore";
 import "../../styles/header.css";
 import { auth, provider } from "../../firebase";
 const index = (props) => {
