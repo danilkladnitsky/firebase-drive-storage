@@ -13,6 +13,12 @@
   margin: auto;
 }
 
+@media screen and (max-width: 600px) {
+  .app__login>img {
+    height: 100px;
+  }
+}
+
 .app__login>button {
   margin-top: 30px;
   font-size: 20px;
@@ -21,4 +27,11 @@
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .app__login>button {
+    margin-top: 10px;
+    font-size: 16px;
+  }
 }

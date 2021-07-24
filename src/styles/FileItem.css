@@ -23,6 +23,22 @@
   align-items: center;
 }
 
+@media screen and (max-width: 500px) {
+  .fileItem{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .fileItem{
+    font-size: 12px;
+  }
+
+  .fileItem--right > p:last-child{
+    display: none;
+  }
+}
+
 .fileItem>a>div>*{
   margin: 10px;
 }
@@ -34,4 +50,8 @@
 .file-item-pic img{
   object-fit: cover;
   height: 30px;
+}
+
+.file-item-owner img{
+  border-radius: 50%;
 }

@@ -11,7 +11,7 @@
 .header__logo {
   height: 60px;
   float: left;
-  width: 50%;
+  width: 80%;
 }
 
 .header__logo>img {
@@ -37,7 +37,7 @@
   height: 60px;
   float: left;
   text-align: right;
-  width: 50%;
+  width: 20%;
 }
 
 .header__login .MuiSvgIcon-root {

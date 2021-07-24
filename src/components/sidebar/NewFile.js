@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const NewFile = () => {
+const NewFile = (props) => {
   const classes = useStyles();
   const [modalStyle] = useState(getModalStyle);
   const [open, setOpen] = useState(false);
@@ -65,6 +65,9 @@ const NewFile = () => {
               caption: file.name,
               size: snapshot._delegate.bytesTransferred,
               fileUrl: url,
+              userAvatar: props.user.photoURL,
+              userEmail: props.user.email,
+              userName: props.user.displayName
             });
 
             setUploading(false);

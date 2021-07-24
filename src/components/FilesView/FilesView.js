@@ -10,7 +10,7 @@ const FilesView = () => {
   const [files, setFiles] = useState([]);
 
   useEffect(() => {
-    db.collection("myFiles").onSnapshot((snapshot) => {
+    db.collection("myFiles").orderBy("timestamp", "desc").onSnapshot((snapshot) => {
       setFiles(
         snapshot.docs.map((doc) => ({
           id: doc.id,
@@ -42,6 +42,7 @@ const FilesView = () => {
           timestamp={item.timestamp}
           fileUrl={item.fileUrl}
           size={item.size}
+          userAvatar={item.userAvatar}
         />
       ))}
     </div>

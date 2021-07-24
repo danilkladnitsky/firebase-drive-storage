@@ -31,13 +31,13 @@ function App() {
       {user ? (
         <>
           <Header userPhoto={user.photoURL} setUser={setUser} />
-          <Sidebar />
+          <Sidebar user={user} />
           <FilesView />
         </>
       ) : (
         <div className="app__login">
           <img src="logo.png" alt="Firebase Storage" />
-          <button onClick={handleLogin}>Log in to Firebase Storage</button>
+          <button onClick={handleLogin}>Log in to Catbase Storage</button>
         </div>
       )}
     </div>

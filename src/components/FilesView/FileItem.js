@@ -18,8 +18,7 @@ const monthNames = [
   "Dec",
 ];
 
-const FileItem = ({ id, caption, timestamp, fileUrl, size }) => {
-  console.log(caption);
+const FileItem = ({ id, caption, timestamp, fileUrl, size, userAvatar }) => {
   const fileDate = `${timestamp?.toDate().getHours()}:${
     timestamp?.toDate().getMinutes() < 10
       ? "0" + timestamp?.toDate().getMinutes()
@@ -42,11 +41,13 @@ const FileItem = ({ id, caption, timestamp, fileUrl, size }) => {
   return (
     <div className="fileItem">
       <a href={fileUrl} target="_blank" download>
+        <div className="file-item-pic file-item-owner">
+          {userAvatar ? <img src={userAvatar} alt={caption} /> : <></>}
+        </div>
         <div className="file-item-pic">
           <img src={fileUrl} alt={caption} />
         </div>
         <div className="fileItem--left">
-          <InsertDriveFileIcon />
           <p>{caption}</p>
         </div>
         <div className="fileItem--right">

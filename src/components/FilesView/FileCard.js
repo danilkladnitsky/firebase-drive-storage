@@ -1,9 +1,6 @@
 import React from "react";
 import "../../styles/FileCard.css";
-import InsertDriveFileIcon from "@material-ui/icons/InsertDriveFile";
-
 const FileCard = ({ name, fileUrl}) => {
-  console.log(fileUrl);
   return (
     <div className="fileCard">
       <a href={fileUrl} target="_blank">
@@ -15,7 +12,6 @@ const FileCard = ({ name, fileUrl}) => {
             backgroundPosition: "center",
           }}
         >
-
         </div>
         <div className="fileCard--bottom">
           <p>{name}</p>
