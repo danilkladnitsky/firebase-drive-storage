@@ -1,0 +1,29 @@
+.fileView{
+  width: 100%;
+}
+
+.fileView__row{
+  display: flex;
+  align-items: center;
+}
+
+.filesView__titles{
+  margin-bottom: 5px;
+  width: 100%;
+  color: rgb(85, 78, 78);
+  padding: 10px 15px;
+  box-sizing: border-box;
+  height: 40px;
+}
+
+.filesView__titles > div{
+  float: left;
+  width: 50%;
+}
+
+.fileView__titles--right{
+  text-align: right;
+}
+
+
+

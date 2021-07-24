@@ -1,0 +1,29 @@
+.fileCard {
+  height: 300px;
+  border-radius: 10px;
+  border: 1px solid rgb(219, 219, 219);
+  margin: 5px;
+  float: left;
+  width: 20%;
+}
+
+.fileCard--top {
+  height: 260px;
+  border-bottom: 1px solid rgb(219, 219, 219);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fileCard--bottom {
+  width: 100%;
+  height: 40px;
+  padding: 5px 0px;
+  text-align: center;
+}
+
+.fileCard--bottom>p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-decoration: none;
+}
